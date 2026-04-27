@@ -2,7 +2,8 @@
 
 **Krea-Tor** est une interface web légère pour créer des torrents directement sur un serveur Linux (LXC Proxmox, VPS, NAS...), sans avoir besoin d'un client bureau.
 
-Conçu pour fonctionner aux côtés de **qBittorrent-nox** (version headless), il comble l'absence du créateur de torrent graphique absent de la Web UI.
+Conçu pour fonctionner aux côtés de **qBittorrent-WebUI** (https://community-scripts.org/scripts/qbittorrent), il comble l'absence du créateur de torrent graphique absent de la Web UI.
+Peu gourmand, il s'installe directement sur l'hôte de **qBittorrent**
 
 ---
 
@@ -22,6 +23,7 @@ Conçu pour fonctionner aux côtés de **qBittorrent-nox** (version headless), i
 - Debian/Ubuntu (ou dérivé)
 - Python 3
 - qBittorrent-nox avec Web UI activée
+- Git
 
 ---
 
@@ -39,11 +41,11 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-Le script vous demandera interactivement :
+**Le script vous demandera interactivement :**
 - L'adresse et le port de votre serveur
 - Les identifiants qBittorrent
-- Les répertoires où sont stockés vos médias
-- Un tracker par défaut (optionnel)
+- Les répertoires où sont stockés vos médias (pensez à repérer le point de montage en amont et à le noter)
+- Un tracker par défaut (optionnel) permettant l'ajout de votre passkey sur un tracker privé
 
 ---
 
