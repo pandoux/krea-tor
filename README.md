@@ -1,4 +1,4 @@
-# 🧲 Krea-Tor
+# 🧲 Krea-Tor v.1
 
 **Krea-Tor** est une interface web légère pour créer des torrents directement sur un serveur Linux (LXC Proxmox, VPS, NAS...), sans avoir besoin d'un client bureau.
 
@@ -15,6 +15,7 @@ Peu gourmand, il s'installe directement sur l'hôte de **qBittorrent**
 - ⬇️ Téléchargement du `.torrent` généré
 - 🔒 Support des torrents privés
 - ⚙️ Configuration centralisée dans un fichier JSON
+- 🎁 **A venir :** Génération automatique de .nfo
 
 ---
 
@@ -46,6 +47,16 @@ sudo ./install.sh
 - Les identifiants qBittorrent
 - Les répertoires où sont stockés vos médias (pensez à repérer le point de montage en amont et à le noter)
 - Un tracker par défaut (optionnel) permettant l'ajout de votre passkey sur un tracker privé
+
+---
+
+
+## 🧲 Utilisation
+
+- Connexion à la page web : [IP_DU_SERVEUR]:8081 (Port par défaut modifiable)
+- Choix de la source si sources multiples
+- Options : Choix du nom du torrent, taille des pièces, gestion manuelle du ou des trackers...
+- Création du torrent : Ajout direct dans qBittorrent si l'option a été cochée et possibilité de télécharger le fichier *.torrent
 
 ---
 
